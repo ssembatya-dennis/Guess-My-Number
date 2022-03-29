@@ -23,6 +23,9 @@ document.querySelector('.check').addEventListener('click', function () {
   } else if (guess === secretNumber) {
     //when the person guesses the secret number
     document.querySelector('.message').textContent = ' 🎉 Correct Number!';
+
+    document.querySelector('body').style.backgroundColor = '#60b347';
+    document.querySelector('.number').style.width = '30rem';
   } else if (guess > secretNumber) {
     //when the guessed number is too high than the secret number
     if (score > 1) {
